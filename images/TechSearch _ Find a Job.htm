@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/search.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta Tags -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- CSS Files -->
+  
+  
+
+  <!-- Favicon Images -->
+  
+  
+  
+  
+  <title>TechSearch | Find a Job</title>
+<link rel="stylesheet" href="./TechSearch _ Find a Job_files/style.css"><link rel="stylesheet" href="./TechSearch _ Find a Job_files/search.css"><link rel="apple-touch-icon" sizes="180x180" href="http://127.0.0.1:5500/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="http://127.0.0.1:5500/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="http://127.0.0.1:5500/favicon-16x16.png"><link rel="manifest" href="http://127.0.0.1:5500/site.webmanifest"></head>
+
+<body>
+  <!-- Footer -->
+  <header class="header-container flex">
+    <div class="logo">
+      <a href="http://127.0.0.1:5500/">
+        <img src="./TechSearch _ Find a Job_files/logo.png" alt="TechSearch Logo">
+      </a>
+    </div>
+    <div class="navbar">
+      <a href="http://127.0.0.1:5500/">Home</a>
+      <a href="http://127.0.0.1:5500/search.html">Find a Job</a>
+      <a href="http://127.0.0.1:5500/about.html">About</a>
+    </div>
+  </header>
+
+  <!-- Form -->
+  <div class="form-section">
+    <h2>Find Your Next Job</h2>
+    <div class="form-container">
+      <form action="http://127.0.0.1:5500/search.html">
+        <select class="dropdown" name="job-titles" id="titles" style="
+    margin-left: -20;
+">
+          <option value="" disabled="" selected="">Pick a Job Title</option>
+          <option value="data-scientist">Data Scientist</option>
+          <option value="web-developer">Web Developer</option>
+          <option value="ux-designer">UX Designer</option>
+          <option value="ios-developer">iOS Developer</option>
+        </select>
+        <select class="dropdown" name="cities" id="cities">
+          <option value="" disabled="" selected="">Select a City</option>
+          <option value="San Jose">San Jose, CA</option>
+          <option value="San Francisco">San Francisco, CA</option>
+          <option value="Seattle">Seattle, WA</option>
+          <option value="Washington">Washington, DC</option>
+          <option value="New York">New York, NY</option>
+          <option value="Baltimore">Baltimore, MD</option>
+          <option value="Boulder">Boulder, CO</option>
+          <option value="San Deigo">San Diego, CA</option>
+          <option value="Denver">Denver, CO</option>
+          <option value="Huntsville">Huntsville, AL</option>
+          <option value="Colorado Springs">Colorado Springs, CO</option>
+          <option value="Houston">Houston, TX</option>
+          <option value="Trenton">Trenton, NJ</option>
+          <option value="Dallas">Dallas, TX</option>
+          <option value="Columbus">Columbus, OH</option>
+          <option value="Austin">Austin, TX</option>
+          <option value="Philadelphia">Philadelphia, PA</option>
+          <option value="Durham">Durham, NC</option>
+          <option value="Raleigh">Raleigh, NC</option>
+          <option value="Alanta">Atlanta, GA</option>
+        </select>
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Results -->
+  <div class="results-container">
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="flex">
+    <img src="./TechSearch _ Find a Job_files/logo-image.png" alt="TechSearch Logo">
+    <div class="footer-nav">
+      <a href="http://127.0.0.1:5500/">Home</a>
+      <a href="http://127.0.0.1:5500/search.html">Find a Job</a>
+      <a href="http://127.0.0.1:5500/about.html">About</a>
+    </div>
+    <p>© 2020 TechSearch</p>
+  </footer>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
