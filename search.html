@@ -16,7 +16,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-  <title>TechSearch | Find a Job</title>
+  <title>TechSearch | Research a Job</title>
 </head>
 
 <body>
@@ -24,27 +24,27 @@
   <header class="header-container flex">
     <div class="logo">
       <a href="/">
-        <img src="./images/logo.png" alt="TechSearch Logo">
+        <img src="/images/logo.png" alt="TechSearch Logo">
       </a>
     </div>
     <div class="navbar">
       <a href="/">Home</a>
-      <a href="/search.html">Find a Job</a>
+      <a href="/search.html">Search</a>
       <a href="/about.html">About</a>
     </div>
   </header>
 
   <!-- Form -->
   <div class="form-section">
-    <h2>Find Your Next Job</h2>
+    <h2>Research Your Next Job</h2>
     <div class="form-container">
-      <form action="">
-        <select class="dropdown" name="job-titles" id="titles">
+      <form action="/output" method="post">
+        <select class="dropdown" name="title" id="titles">
           <option value="" disabled selected>Pick a Job Title</option>
-          <option value="data-scientist">Data Scientist</option>
-          <option value="web-developer">Web Developer</option>
-          <option value="ux-designer">UX Designer</option>
-          <option value="ios-developer">iOS Developer</option>
+          <option value="data scientist">Data Scientist</option>
+          <option value="web developer">Web Developer</option>
+          <option value="ux designer">UX Designer</option>
+          <option value="ios developer">iOS Developer</option>
         </select>
         <select class="dropdown" name="cities" id="cities">
           <option value="" disabled selected>Select a City</option>
@@ -75,8 +75,9 @@
   </div>
 
   <!-- Results -->
-  <div class="results-container">
-
+  <div class="results-container flex">
+    <h2>Search Above to See Results</h2>
+    <img class="image" src="/images/logo-image.png" alt="TechSearch Logo">
   </div>
 
   <!-- Footer -->
@@ -84,7 +85,7 @@
     <img src="/images/logo-image.png" alt="TechSearch Logo">
     <div class="footer-nav">
       <a href="/">Home</a>
-      <a href="/search.html">Find a Job</a>
+      <a href="/search.html">Search</a>
       <a href="/about.html">About</a>
     </div>
     <p>&copy; 2020 TechSearch</p>
